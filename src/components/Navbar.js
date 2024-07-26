@@ -8,9 +8,8 @@ export default function Navbar() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isScrolling2, setIsScrolling2] = useState(false);
   
-  // Directly get the basket from Redux store
-  const basket = useSelector(state => state.basket); // Adjust the state key if needed
-  const basketLength = basket.length || 0; // Ensure basketLength is 0 if basket is empty
+  const basket = useSelector(state => state.basket); 
+  const basketLength = basket.length || 0; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +18,7 @@ export default function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call initially to set state based on current scroll position
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -39,7 +38,7 @@ export default function Navbar() {
         <button>
           <ShoppingCartOutlined className={`text-2xl z-20 ${isScrolling2 ? 'text-black' : 'text-white'}`} />
           {basketLength > 0 && (
-            <div className='badge text-white bg-blue-500 w-4 h-4 p-2.5 rounded-full absolute top-5 right-6  lg:right-24 xl:right-24 flex items-center justify-center'>
+            <div className='badge bg-[#FED097] w-4 h-4 p-2.5 rounded-full absolute top-5 right-6  lg:right-24 xl:right-24 flex items-center justify-center'>
               {basketLength}
             </div>
           )}
