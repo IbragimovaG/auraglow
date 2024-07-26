@@ -7,9 +7,9 @@ import { useSelector } from 'react-redux';
 export default function Navbar() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [isScrolling2, setIsScrolling2] = useState(false);
-  
-  const basket = useSelector(state => state.basket); 
-  const basketLength = basket.length || 0; 
+
+  const basket = useSelector(state => state.basket);
+  const basketLength = basket.length || 0;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +18,7 @@ export default function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -27,7 +27,8 @@ export default function Navbar() {
 
   return (
     <div data-aos={'fade-down'} className={`flex z-20 lg:px-28 xl:px-28 px-10 w-full items-center justify-between h-20 fixed ${isScrolling ? 'backdrop-blur-lg' : ''}`}>
-      <img className='mt-6' src={logo} alt="Logo" />
+<a href='#home' className='cursor-pointer'>            <img className='mt-6' src={logo} alt="Logo" />
+</a>
       <div className={`lg:flex gap-20 md:flex hidden ${isScrolling2 ? 'text-black' : 'text-white'}`}>
         <a className='hover:text-blue-800' href="#products">Products</a>
         <a className='hover:text-blue-800' href="#our_story">Our Story</a>
