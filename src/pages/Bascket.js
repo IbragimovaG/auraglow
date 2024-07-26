@@ -30,19 +30,19 @@ export default function Basket() {
       ) : (
         <ul>
           {basket.map((item, index) => (
-            <div className='w-[100%] h-[63vh] px-28 flex my-32' key={index}>
-              <div className='w-[30%] text-center rounded-lg'>
-                <img className='h-[63vh] w-[100%]' src={item.img1} alt='' />
-                <h1 className='-mt-72 text-6xl text-white font-thin'>{item.name}</h1>
-                <button className='bg-[#36608a] text-white rounded-3xl border-none mt-20 py-3 px-8'>Shop whitening kit</button>
-              </div>
-              <div className='w-[70%] bg-[white] px-20 py-7'>
-                <h1 className='text-3xl'>{item.title}</h1>
-                <p>{item.price}</p>
-                <img className='m-auto' width={250} src={item.img2} alt='' />
-                <button onClick={() => Delete(item.id)} className='bg-[#18317c] mt-16 py-2 w-[100%] text-white rounded-3xl border-none'>Delete from cart</button>
-              </div>
-            </div>
+             <div data-aos={'fade-left'} className='w-[100%] h-100 lg:px-28 md:px-28 xl:px-28 px-10 flex lg:flex-row md:flex-row xl:flex-row flex-col mt-10 mb-32' key={item.id}>
+             <div className='lg:w-[30%] xl:w-[30%] md:w-[100%] w-[100%] text-center'>
+               <img className='h-100 w-[100%]' src={item.img1} alt='' />
+               <h1 className='-mt-72 text-6xl text-white font-thin'>{item.name}</h1>
+               <button  className='bg-[#36608a] text-white rounded-3xl border-none mt-20 py-3 px-8 lg:mb-0 xl:mb-0 md:mb-0 mb-10'>Shop whitening kit</button>
+             </div>
+             <div className='lg:w-[70%] md:w-[100%] xl:w-[70%] w-[100%] bg-white lg:px-20 md:px-20 xl:px-20 px-10 py-7'>
+               <h1 className='text-3xl'>{item.title}</h1>
+               <p>{item.price}</p>
+               <img className='m-auto' width={300} src={item.img2} alt='' />
+               <button onClick={() => Delete(item.id)} className='bg-[#18317c] mt-16 py-2 w-[100%] text-white rounded-3xl border-none'>Delete from cart</button>
+             </div>
+           </div>
           ))}
         </ul>
       )}

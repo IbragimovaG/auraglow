@@ -39,7 +39,7 @@ export default function Navbar() {
         <button>
           <ShoppingCartOutlined className={`text-2xl z-20 ${isScrolling2 ? 'text-black' : 'text-white'}`} />
           {basketLength > 0 && (
-            <div className='badge text-white bg-blue-500 w-4 h-4 rounded-lg absolute top-5 right-24  flex items-center justify-center'>
+            <div className='badge text-white bg-blue-500 w-4 h-4 p-2.5 rounded-full absolute top-5 right-6  lg:right-24 xl:right-24 flex items-center justify-center'>
               {basketLength}
             </div>
           )}
