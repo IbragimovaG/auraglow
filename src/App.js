@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React, { useEffect } from "react";
+import Home from './pages/Home.js'
+import OurStory from './pages/OurStory.js';
+import Products from './pages/Products.js';
+import VirtualMirror from './pages/VirtualMirror.js';
+import Navbar from'./components/Navbar.js'
+import Rewievs from './pages/Rewievs.js';
+import Footer from './pages/Footer.js';
+import Aos from 'aos';
 function App() {
+  useEffect(() => {
+    Aos.init({})
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App xl:container mx-auto  ">
+      <Navbar/>
+      <Home/>
+      <OurStory/>
+      <Products/>
+      <Rewievs/>
+      <VirtualMirror/>
+      <Footer/>
     </div>
   );
 }
