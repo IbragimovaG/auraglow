@@ -4,7 +4,7 @@ import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
 export default function Footer() {
   return (
-    <div className='w-full h-auto bg-[#08263F] flex lg:flex-nowrap xl:flex-nowrap flex-wrap lg:px-28 xl:px-28 px-10'>
+    <div className='w-full h-auto lg:-mt-0 xl:-mt-0 -mt-96  bg-[#08263F] flex lg:flex-nowrap xl:flex-nowrap flex-wrap lg:px-28 xl:px-28 px-10'>
       <div data-aos={'fade-up'} className='lg:w-1/6 xl:w-1/6 w-2/4 h-100 lg:py-20 xl:py-20 py-10 '>
       <img className='lg:mt-0 xl:mt-0 mt-12' src={logo} alt="" />
       <p className='lg:mt-80 xl:mt-80 mt-72 text-white'>

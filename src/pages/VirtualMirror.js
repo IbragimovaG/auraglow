@@ -24,7 +24,7 @@ export default function VirtualMirror() {
           Here’s the deal. Come smile with us for a month. See how you feel. If it’s anything short of excellent, you get every penny back. That’s our promise to you. And it’s that simple.          </p>
           <button className='text-[#031622]  px-5 py-2 rounded-3xl border border-[#031622]'>Our guarantee</button>
         </div>
-        <img className='ml-64 lg:block xl:block md:hidden hidden' src={require('../assets/woman.png')} alt="" />
+        <img width={1000} className='ml-64 lg:block xl:block md:hidden hidden' src={require('../assets/woman.png')} alt="" />
       </div>
     </div>
   )

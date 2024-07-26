@@ -4,3 +4,10 @@
 * {
     scroll-behavior: smooth;
 }
+#products{
+    overflow-x: hidden;
+}
+#reviews{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

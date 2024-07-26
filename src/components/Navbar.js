@@ -26,8 +26,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div data-aos={'fade-down'} className={`flex z-20 lg:px-28 xl:px-28 px-10 w-full items-center justify-between h-20 fixed ${isScrolling ? 'backdrop-blur-lg' : ''}`}>
-<a href='#home' className='cursor-pointer'>            <img className='mt-6' src={logo} alt="Logo" />
+    <div data-aos={'fade-down'} className={`flex z-20 lg:px-28 xl:px-28 px-10  lg:w-full xl:w-full  items-center justify-between h-20 fixed ${isScrolling ? 'backdrop-blur-lg' : ''}`}>
+<a href='#home' className='cursor-pointer'><img className='mt-6' src={logo} alt="Logo" />
 </a>
       <div className={`lg:flex gap-20 md:flex hidden ${isScrolling2 ? 'text-black' : 'text-white'}`}>
         <a className='hover:text-blue-800' href="#products">Products</a>
