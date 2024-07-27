@@ -24,11 +24,11 @@ const initialState = {
   product3: [
     {
       id: 3,
-      img1: "https://m.media-amazon.com/images/I/61q0yCcDcwL._US500_.jpg",
-      img2: "https://m.media-amazon.com/images/I/71oLRHfbDDL._AC_UF350,350_QL80_.jpg",
-      title: 'Whitening Kit',
+      img1: "https://s3-alpha-sig.figma.com/img/b84f/b146/85f70ab60cc651b5a41f901cd77bd49f?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UnEK94WAk4utD2JgBI6lv50B9bfY5bSCu4ejXL8r3CuK731kDmGGIuEeVILi754JVfniJ3TA0O7TzAWBkmVezGZ8X67CIns95Hyx94aBUC0lVW26CMeNAwu~6rX0y8gavFX1I1y359p0qGL4oOSauxYM6tuypD-lA0noC2lasZLTY3Vabpcmatql5obGHwvDbIWx1LhYE-AE74oQG-cM7PAtVsv8Upo3FMEPD0Xg0WpWf-wIYxWXVjJQrX5BfrKYd5kwXCnvAU9Gs9U9IB8mFzk8ujD6wMOcHl6oN1sinnmymdo1-uWI2qjnAZ7NLtipCoV2uHmOh3Fhfi26CL~tIQ__",
+      img2: "https://cdn.shopify.com/s/files/1/0446/9486/4028/files/pen_side_1350x_22c131eb-95e7-4436-893a-0cc3bd75a036_240x240.png?v=1596733983",
+      title: 'Whitening Pen',
       price: '$60',
-      name:'Whitening Kit'
+      name:'Whitening Pen'
     }
   ],
   basket: []  
