@@ -19,7 +19,7 @@ export default function Basket() {
         <Link to={"/"}>
           <button className='text-3xl  ml-5 bg-gray-100 py-2 lg:px-4 px-2 rounded-lg  text-[#08263F] bg:blur-md items-center flex gap-2' ><ArrowLeftOutlined className=' text-[#08263F] text-xl' />Back</button>
         </Link>
-        <h1 className='text-5xl lg:ml-[28%] xl:ml-[30%] md:ml-[22%] ml-5 text-[#08263F] my-10'>Shopping Basket</h1>
+        <h1 className='text-5xl lg:ml-[25%] xl:ml-[30%] md:ml-[22%] ml-5 text-[#08263F] my-10'>Shopping Basket</h1>
       </div>
       {basket.length === 0 ? (
         <div className='w-[100%] h-[100vh] bg-[white] -mt-32'>
