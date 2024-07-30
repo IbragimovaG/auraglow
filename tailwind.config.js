@@ -7,6 +7,7 @@ module.exports = {
       "md":'700px',
       'lg': '1280px',
       'xl': '1536px',
+      '2xl':'1536px'
     },
 
     extend: {
