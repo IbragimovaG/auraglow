@@ -36,7 +36,7 @@ export default function Basket() {
             <Link to={"/"}>
                   <button className='bg-[#36608a] text-white rounded-3xl border-none mt-20 py-3 px-8 lg:mb-0 xl:mb-0 md:mb-0 mb-10'>Shop whitening kit</button>
                 </Link>          </div>
-          <div className='lg:w-[63%] md:w-[100%] xl:w-[70%] w-[100%] bg-white lg:px-20 md:px-20 xl:px-20 px-10 flex flex-col lg:gap-5 xl:gap-1 xl:py-2 lg:py-5 '>
+          <div className='lg:w-[63%] md:w-[100%] xl:w-[70%] w-[100%] bg-white lg:px-20 md:px-20 xl:px-20 px-10 flex flex-col lg:gap-2 xl:gap-1 xl:py-2 lg:py-5 '>
             <h1 className='text-3xl'>{item.title}</h1>
             <p>{item.price}</p>
             <img className='m-auto -mt-10' width={400} src={item.img2} alt='' />
